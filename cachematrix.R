@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## these functions utilize lexical scoping to illustrate how to cache time consuming operations
 
-## make invertible matrix
+
+## given any matrix, cache it
 
 makeCacheMatrix <- function(x = matrix()) {
 	m<-NULL
@@ -16,7 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
 	list(set=set,get=get,setmatrix=setmatrix,getmatrix=getmatrix)
 }
 
-## check if inverse is already created if not return inverse, else return cached inverse
+## check if it's a new matrix and the inverse is already created if not calculate and return the inverse, else return the cached inverse matrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
